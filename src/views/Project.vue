@@ -17,11 +17,6 @@ export default {
 			selectedProject: null,
 		};
 	},
-	computed: {
-		desco() {
-			return this.selectedProject;
-		},
-	},
 	created() {
 		this.selectedProject = this.$store.getters["projects"].find((project) => project.name === this.name);
 		console.log(this.selectedProject);
